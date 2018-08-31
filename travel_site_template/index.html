@@ -14,7 +14,7 @@
   <title>Custom Materialize Theme</title>
 </head>
 
-<body>
+<body id="travel-home" class="scrollspy">
 
   <!-- Nav Side Nav -->
   <div class="navbar-fixed">
@@ -27,19 +27,19 @@
           </a>
           <ul class="right hide-on-med-and-down">
             <li>
-              <a href="#home">Home</a>
+              <a href="#travel-home">Home</a>
             </li>
             <li>
-              <a href="#search">Search</a>
+              <a href="#travel-search">Search</a>
             </li>
             <li>
-              <a href="#popular">Popular Places</a>
+              <a href="#travel-popular">Popular Places</a>
             </li>
             <li>
-              <a href="#gallery">Gallery</a>
+              <a href="#travel-gallery">Gallery</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#travel-contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -66,7 +66,7 @@
   <!-- Nav Side Nav -->
 
   <!-- Slider -->
-  <section class="slider">
+  <section class="slider scrollspy" id="travel-slider">
     <ul class="slides">
       <li>
         <img src="img/resort1.jpg" alt="">
@@ -97,7 +97,7 @@
   <!-- Slider -->
 
   <!-- Search -->
-  <section class="section section-search teal darken-1 white-text center">
+  <section class="section section-search teal darken-1 white-text center scrollspy" id="travel-search">
     <div class="container">
       <div class="row">
         <div class="col s12">
@@ -112,7 +112,7 @@
   <!-- Search -->
 
   <!-- Icon Boxes -->
-  <section class="section section-icons grey lighten-4 center">
+  <section class="section section-icons grey lighten-4 center scrollspy" id="travel-social">
     <div class="container">
       <div class="row">
         <div class="col s12 m4">
@@ -142,7 +142,7 @@
   <!-- Icon Boxes -->
 
   <!-- Popular Places -->
-  <section class="section section-popular">
+  <section class="section section-popular scrollspy" id="travel-popular">
     <div class="container">
       <div class="row">
         <h4 class="center">
@@ -196,7 +196,7 @@
   <!-- Popular Places -->
 
   <!-- Follow -->
-  <section class="section section-follow teal darken-2 white-text center">
+  <section class="section section-follow teal darken-2 white-text center scrollspy" id="travel-follow">
     <div class="container">
       <div class="row">
         <div class="col s12">
@@ -224,7 +224,7 @@
   <!-- Follow -->
 
   <!-- Gallery -->
-  <section class="section section-gallery">
+  <section class="section section-gallery scrollspy" id="travel-gallery">
     <div class="container">
       <h4 class="center">
         <span class="teal-text">Photo</span> Gallery
@@ -256,10 +256,62 @@
         <div class="col s12 m3">
           <img src="https://source.unsplash.com/1600x900/?cool" alt="" class="materialboxed responsive-img">
         </div>
-      </div>
+      </div>    
     </div>
   </section>
   <!-- Gallery -->
+
+  <!-- Contact -->
+  <section class="section section-contact scrollspy" id="travel-contact">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card-panel teal white-text center">
+            <i class="material-icons medium">email</i>
+            <h5>Contact Us For Booking</h5>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, animi!</p>
+          </div>
+          <ul class="collection with-header">
+            <li class="collection-header">
+              <h4>Location</h4>
+            </li>
+            <li class="collection-item">Travel Agency</li>
+            <li class="collection-item">+65 133123</li>
+            <li class="collection-item">Malolos, Philippines</li>
+          </ul>
+        </div>
+        <div class="col s12 m6">
+          <div class="card-panel grey darken-3">
+            <h5 class="white-text">Please Fill out this form</h5>
+            <div class="input-field">
+              <input type="text" placeholder="Name" id="name">
+              <label for="name">Name</label>
+            </div>
+            <div class="input-field">
+              <input type="email" placeholder="Email" id="email">
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+              <input type="text" placeholder="Mobile" id="mobile">
+              <label for="mobile">Mobile</label>
+            </div>
+            <div class="input-field">
+              <textarea class="materialize-textarea" id="message"></textarea>
+              <label for="message">Message</label>
+            </div>
+            <input type="submit" class="btn" value="Submit">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact -->
+
+  <!-- Footer -->
+  <footer class="section teal darken-2 white-text center">
+    <p class="flow-text">Travelsite &copy; 2018</p>
+  </footer>
+  <!-- Footer -->
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -292,6 +344,9 @@
           'Manila': null
         }
       });
+
+      // Scrollspy
+      $('.scrollspy').scrollSpy();
 
     });
   </script>

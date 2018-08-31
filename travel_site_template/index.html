@@ -15,6 +15,8 @@
 </head>
 
 <body>
+
+  <!-- Nav Side Nav -->
   <div class="navbar-fixed">
     <nav class="teal">
       <div class="container">
@@ -61,14 +63,55 @@
       <a href="#contact">Contact</a>
     </li>
   </ul>
+  <!-- Nav Side Nav -->
 
+  <!-- Slider -->
+  <section class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/resort1.jpg" alt="">
+        <div class="caption center-align">
+          <h2>Take your dream vacation</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam aliquam eligendi voluptatibus distinctio facilis tempora!</h5>
+          <a href="#" class="btn btn-large">Learn More</a>
+        </div>
+      </li>
+      <li>
+        <img src="img/resort2.jpg" alt="">
+        <div class="caption center-left">
+          <h2>We Work</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam aliquam eligendi voluptatibus distinctio facilis tempora!</h5>
+          <a href="#" class="btn btn-large">Learn More</a>
+        </div>
+      </li>
+      <li>
+        <img src="img/resort3.jpg" alt="">
+        <div class="caption center-right">
+          <h2>Groups and Individuals</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam aliquam eligendi voluptatibus distinctio facilis tempora!</h5>
+          <a href="#" class="btn btn-large">Learn More</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <!-- Slider -->
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
     $(document).ready(function () {
+
+      // Side Nav
       $('.button-collapse').sideNav();
+
+      // Slider
+      $('.slider').slider({
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 6000
+      });
       
     });
   </script>

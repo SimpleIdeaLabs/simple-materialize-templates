@@ -206,6 +206,35 @@
   </section>
 
   <!-- Contact -->
+  <section class="section section-contact center scrollspy" id="contact">
+    <div id="googlemaps"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6 offset-m6">
+          <div class="card-panel z-depth-5">
+            <h4>Contact Us</h4>
+            <div class="input-field">
+              <input type="text">
+              <label for="">Name</label>
+            </div>
+            <div class="input-field">
+              <input type="text">
+              <label for="">Email</label>
+            </div>
+            <div class="input-field">
+              <input type="text">
+              <label for="">Phone</label>
+            </div>
+            <div class="input-field">
+              <textarea name="" id="" class="materialize-textarea"></textarea>
+              <label for="">Phone</label>
+            </div>
+            <input type="submit" class="btn blue-grey" value="Submit">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="page-footer blue-grey darken-1">
@@ -246,6 +275,7 @@
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoqwLV35xN7gyHiWUZSbnC8wnQyGP7VfE"></script>
   <script>
     $(document).ready(function () {
       // Init Sidenav
@@ -279,6 +309,22 @@
 
       // Scrollspy
       $('.scrollspy').scrollSpy();
+
+      // Google Maps
+      const position =[42.361145, -71.05782];
+      const center = [42.232313, -70.9123213]
+
+      const showGoogleMap = () => {
+        const latLng = new google.maps.LatLng(position[0], position[1]);
+        const centerLatLng = new google.maps.LatLng(center[0], center[1]);
+        const mapOpts = {
+          zoom: 12,
+          center: centerLatLng
+        }
+        const map = new google.maps.Map(document.getElementById('googlemaps'),mapOpts);
+      }
+
+      google.maps.event.addDomListener(window, 'load', showGoogleMap);
 
     });
   </script>

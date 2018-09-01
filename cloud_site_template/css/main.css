@@ -4,6 +4,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -27,4 +28,24 @@
   border-top: #333 solid 5px;
   border-bottom: #333 solid 5px;
   min-height: 110px;
+}
+ 
+.section-podcast {
+  position: relative;
+  background: url('../img/circuit.jpg');
+  background-size: cover;
+  background-position: center;
+  border-top: #333 solid 5px;
+  border-bottom: #333 solid 5px;
+  min-height: 160px;
+}
+
+.section-podcast a {
+  margin-top: 30px;
+}
+
+@media(max-width: 500px) {
+  .section-developers,.section-podcast {
+    min-height: 240px;
+  }
 }

@@ -13,7 +13,7 @@
   <title>Landing Page Template</title>
 </head>
 
-<body>
+<body id="home" class="scrollspy">
 
   <!-- Header -->
   <header class="main-header">
@@ -121,6 +121,128 @@
     </div>
   </section>
 
+  <!-- About -->
+  <section class="section section-about grey lighten-3 center scrollspy" id="about">
+    <div class="container">
+      <h2>About Landing</h2>
+      <p class="flow-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores ad laboriosam dolorum voluptatibus consectetur tempora praesentium illo nisi pariatur deleniti?</p>
+      <div class="row">
+        <div class="col s12 m6">
+          <img src="img/people.jpg" alt="" class="responsive-img circle">
+        </div>
+        <div class="col s12 m5 offset-m1">
+          <br>
+          <ul class="collection with-header z-depth-4">
+            <li class="collection-header">
+              <h5>Services</h5>
+            </li>
+            <li class="collection-item">
+              <i class="material-icons left">check</i> Lorem, ipsum.
+            </li>
+            <li class="collection-item">
+              <i class="material-icons left">check</i> Lorem, ipsum.
+            </li>
+            <li class="collection-item">
+              <i class="material-icons left">check</i> Lorem, ipsum.
+            </li>
+            <li class="collection-item">
+              <i class="material-icons left">check</i> Lorem, ipsum.
+            </li>
+            <li class="collection-item">
+              <i class="material-icons left">check</i> Lorem, ipsum.
+            </li>
+            <li class="collection-item">
+              <i class="material-icons left">check</i> Lorem, ipsum.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section section-testimonials blue white-text center scrollspy" id="testimonials">
+    <div class="container">
+      <h2>Lorem ipsum dolor sit.</h2>
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card grey lighten-4 black-text z-depth-4">
+            <div class="card-content">
+              <p><em>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, modi sunt error temporibus tenetur, excepturi cupiditate aliquam fugit quaerat in, necessitatibus facere. Iusto natus, eveniet in rem accusantium suscipit perspiciatis.</em></p>
+            </div>
+            <div class="card-action">
+              <p>Lorem, ipsum dolor. ABC Inc.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card grey lighten-4 black-text z-depth-4">
+            <div class="card-content">
+              <p>
+                <em>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, modi sunt error temporibus tenetur, excepturi cupiditate
+                  aliquam fugit quaerat in, necessitatibus facere. Iusto natus, eveniet in rem accusantium suscipit perspiciatis.</em>
+              </p>
+            </div>
+            <div class="card-action">
+              <p>Lorem, ipsum dolor. ABC Inc.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card grey lighten-4 black-text z-depth-4">
+            <div class="card-content">
+              <p>
+                <em>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, modi sunt error temporibus tenetur, excepturi cupiditate
+                  aliquam fugit quaerat in, necessitatibus facere. Iusto natus, eveniet in rem accusantium suscipit perspiciatis.</em>
+              </p>
+            </div>
+            <div class="card-action">
+              <p>Lorem, ipsum dolor. ABC Inc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+
+  <!-- Footer -->
+  <footer class="page-footer blue-grey darken-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5>Location</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li>
+              <a class="grey-text text-lighten-3 white-text" href="#!">Home</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3 white-text" href="#!">About</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3 white-text" href="#!"></a>Testimonials</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3 white-text" href="#!">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Copyright Landing © 2018
+        <a class="grey-text text-lighten-4 right" href="#!">Terms and Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -154,6 +276,9 @@
         }
       ];
       Materialize.scrollFire(opts);
+
+      // Scrollspy
+      $('.scrollspy').scrollSpy();
 
     });
   </script>
